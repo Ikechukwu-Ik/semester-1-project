@@ -1,0 +1,62 @@
+
+.contact-form {
+	background: rgba(200, 255, 255, 250);
+	border-radius: 8px;
+	padding: 15px;
+	display: inline-block;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.inputbox {
+	float: left;
+	width: 300px;
+	min-height: 40px;
+	border-radius: 8px; 
+	background: transparent;
+	border: 2px solid gray;
+	margin-right: 2px;
+}
+
+.messagebox {
+	float: left;
+	width: 605px;
+	min-height: 60px;
+	border-radius: 8px;
+	margin-top: 10px;
+	background: transparent;
+	padding: 5px;
+	border: 2px solid gray;
+}
+
+.send-msg-btn {
+	margin-top: 5px;
+	border-radius: 8px;
+	border: 2px solid darkolivegreen;
+	background: darkolivegreen;
+	color: white;
+}
+
+.social ul {
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px;
+}
+
+.social ul li a {
+	font-weight: bolder;
+	color: white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin: 8px;
+}
+
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+	.namebox, .emailbox, .messagebox {
+		width: 100%; 
+	}
+}
