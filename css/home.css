@@ -1,6 +1,6 @@
 body {
-	background: darkolivegreen;
-	color: white;
+	background: cornsilk;
+	//color: white;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -31,13 +31,14 @@ body {
 
 .navbar ul li a {
 	padding: 25px;
-	color: white;
+	font-weight: bold;
+	color: black;
 	text-decoration: none;
 	transition: 0.7s ease;
 }
 
 .navbar ul li a:hover {
-	color: green;
+	color: darkorange;
 }
 
 .main-content {
@@ -78,9 +79,10 @@ body {
 }
 
 .shop-btn {
-	background: white;
-	border-radius: 30px;
-	border: 2px solid white;
+	background: darkorange;
+	color: white;
+	border-radius: 6px;
+	border: 0px solid darkorange;
 	padding: 10px 20px;
 	font-weight: bold;
 	font-size: 14px;
@@ -91,7 +93,8 @@ body {
 
 .shop-btn:hover{
 	background: transparent;
-	border: 2px solid white;
+	border: 1px solid darkorange;
+	color: black;
 }
 
 .animate-text {
@@ -197,19 +200,26 @@ body {
 
 
 	.main-content {
-		display:  flex;
+		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 3rem;
 	}
 
 	.main-content .text-content p {
-		width: 85%;
+		width: 98%;
 	}
 
 	.main-content .image-content {
-		margin-top: 50px;
+		margin-top: 20px;
+		margin-bottom: 50px;
 		justify-content: flex-start;
 	}
 
+	.main-content .image-content img {
+		max-width: 220px;
+	}
 
 
 }
