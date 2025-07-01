@@ -21,10 +21,13 @@ contactForm.addEventListener('submit', e => {
     e.preventDefault();
 
     var username = document.getElementById('username').value.trim();
-		var address = document.getElementById('address').value.trim();
-		var message = document.querySelector('.message-area').value.trim();
+    var address = document.getElementById('address').value.trim();
+    var message = document.querySelector('.message-area').value.trim();
 
-    confirm ("Do you want to send this message to MU Shopping Mall?\n\n" + "From: " + username + "\nAddress: " + address + "\nContent: " + message);
+    var authorize = confirm ("Do you want to send this message to MU Shopping Mall?\n\n" + "From: " + username + "\nAddress: " + address + "\nContent: " + message);
+    if(authorize == true) {
+       showPopup();
+    }
 });
 
 
